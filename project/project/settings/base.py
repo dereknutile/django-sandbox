@@ -186,6 +186,8 @@ DJANGO_APPS = (
 
     # Useful template tags:
     # 'django.contrib.humanize',
+    'filer',
+    'easy_thumbnails',
 
     # Admin panel and documentation:
     'django.contrib.admin',
@@ -199,6 +201,10 @@ THIRD_PARTY_APPS = (
 
 # Apps specific for this project go here.
 LOCAL_APPS = (
+    'apps.company',
+    'apps.django_ffiler',
+    'apps.ffilercontent',
+    'apps.thumbz',
 )
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps

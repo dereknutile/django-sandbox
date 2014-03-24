@@ -8,12 +8,12 @@ admin.autodiscover()
 urlpatterns = patterns('',
     url(r'^$', TemplateView.as_view(template_name='base.html')),
 
-    # Examples:
-    # url(r'^$', 'project.views.home', name='home'),
-    # url(r'^project/', include('project.foo.urls')),
+    # Example:
+    # url(r'^company/', include('procompanyject.foo.urls')),
 
-    # Uncomment the admin/doc line below to enable admin documentation:
-    # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
+    # django multiuploader
+    # https://github.com/xacce/django_ffiler
+    url(r'^design/', include('apps.django_ffiler.urls')),
 
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
